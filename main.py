@@ -1,4 +1,4 @@
-print("Advanced Physics Multiple Choice  Quiz")
+print("Advanced Physics Multiple Choice Quiz")
 questions = [
     {
     "question": "What is the equation for calculating the area of a circle?",
@@ -67,4 +67,9 @@ for question in questions:
         print("Incorrect")
 
 percentage = (correct / len(questions)) * 100
-print(f"Your score is {correct} out of {len(questions)} ({percentage:.2f}%)")
+if percentage > 80:
+    grade = "A"
+elif percentage > 60:
+    grade = "B"
+else: grade = "Fail"
+print(f"Your score is {correct} out of {len(questions)} ({percentage:.2f}%)", grade)
