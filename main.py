@@ -72,4 +72,4 @@ if percentage > 80:
 elif percentage > 60:
     grade = "B"
 else: grade = "Fail"
-print(f"Your score is {correct} out of {len(questions)} ({percentage:.2f}%)", grade)
+print(f"Your score is {correct} out of {len(questions)} ({percentage:.2f}%) {grade}")
